@@ -39,25 +39,23 @@ body {
 /* Main CSS */
 
 .grid-container {
-  height: 750px;
+  height: 1300px;
   display: grid;
   grid-template-columns: auto auto ;
   grid-gap: 5px;
   margin-left:300px;
-  background-color: #2196F3;
   padding: 10px;
 }
 
 .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
-  padding: 20px 0;
   font-size: 30px;
+  padding: 10px 0;
 }
 
 /* CSS -MAP */
 .map{
-  height:500px;
+  height:800px;
   grid-column-start: 1;
   grid-column-end: 3;
 }
@@ -67,12 +65,21 @@ body {
   width:100%;
 
 }
+/* CSS-GRAPH*/
+
 
 .graphs{
-  height: 118px;
+  height: 450px;
   grid-column-start: 1;
   grid-column-end: 3;  
 }
+
+#area-chart,
+#line-chart{
+  min-height: 250px;
+}
+
+/*Footer - CSSS */
 
 footer{
   background-color: #111;
