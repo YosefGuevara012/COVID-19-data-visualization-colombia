@@ -1,8 +1,12 @@
+
 body {
   font-family: "Lato", sans-serif;
   height:768px;
   background-color:#111;
 }
+
+/* Navbar CSS */
+
 .sidenav {
   height: 100%;
   width: 300px;
@@ -33,7 +37,7 @@ body {
   .sidenav a {font-size: 18px;}
 }
 
-/* main CSS */
+/* Main CSS */
 
 .grid-container {
   height: 750px;
@@ -52,11 +56,19 @@ body {
   font-size: 30px;
 }
 
+/* CSS -MAP */
 .map{
   height:500px;
   grid-column-start: 1;
   grid-column-end: 3;
 }
+
+#map{
+  height:100%;
+  width:100%;
+
+}
+
 .graphs{
   height: 118px;
   grid-column-start: 1;

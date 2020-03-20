@@ -8,6 +8,14 @@
 </head>
 <body>
 <!-- partial:index.partial.html -->
+<!--Map code-->
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+</head>
+
+<!--Body HTML code-->
+
 <body>
   <div class="sidenav">
     <a href="#about">COVID-19 Colombia</a>
@@ -26,13 +34,16 @@
   </div>
 
   <div class="grid-container">
-    <div class="map">1</div>
+    <div class="map">
+      <div id="map"></div>
+    </div>
     <div class="graphs">2</div>
   </div>
   <footer>by @YosefGuevara - 2020</footer>
 
   </body>
 <!-- partial -->
-  
+  <script  src="./script.js"></script>
+
 </body>
 </html>
