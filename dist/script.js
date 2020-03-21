@@ -2,37 +2,72 @@ var map = L.map('map').setView([4.7106778, -74.0732425], 6);
     L.tileLayer('https://api.maptiler.com/maps/darkmatter/{z}/{x}/{y}.png?key=9aOW9P5TIthZlr4M7tLF', {attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'}).addTo(map);
 
 /* JS - Graph data*/
-
-var data = [
-      { y: '2014', a: 50, b: 90},
-      { y: '2015', a: 65,  b: 75},
-      { y: '2016', a: 50,  b: 50},
-      { y: '2017', a: 75,  b: 60},
-      { y: '2018', a: 80,  b: 65},
-      { y: '2019', a: 90,  b: 70},
-      { y: '2020', a: 100, b: 75},
-      { y: '2021', a: 115, b: 75},
-      { y: '2022', a: 120, b: 85},
-      { y: '2023', a: 145, b: 85},
-      { y: '2024', a: 160, b: 95}
+var datacolombia = [
+      { y: '2020-03-06', a: 1, b: 0},
+      { y: '2020-03-07', a: 1,  b: 0},
+      { y: '2020-03-08', a: 1,  b: 0},
+      { y: '2020-03-09', a: 3,  b: 0},
+      { y: '2020-03-10', a: 9,  b: 0},
+      { y: '2020-03-11', a: 12,  b: 0},
+      { y: '2020-03-12', a: 12, b: 0},
+      { y: '2020-03-13', a: 16, b: 0},
+      { y: '2020-03-14', a: 24, b: 0},
+      { y: '2020-03-15', a: 45, b: 1},
+      { y: '2020-03-16', a: 57, b: 2},
+      { y: '2020-03-17', a: 75, b: 2},
+      { y: '2020-03-18', a: 102, b: 2},
+      { y: '2020-03-19', a: 128, b: 2},
+      { y: '2020-03-20', a: 145, b: 2}
     ],
     config = {
-      data: data,
+      data: datacolombia,
       xkey: 'y',
       ykeys: ['a', 'b'],
-      labels: ['Total Income', 'Total Outcome'],
+      labels: ['Casos confirmados', 'Casos recuperados'],
       fillOpacity: 0.6,
       hideHover: 'auto',
       behaveLikeLine: true,
       resize: true,
       pointFillColors:['#ffffff'],
       pointStrokeColors: ['black'],
-      lineColors:['gray','red']
+      lineColors:['red','green']
   };
+
+var databogota = [
+      { y: '2020-03-06', a: 1, b: 0},
+      { y: '2020-03-07', a: 1,  b: 0},
+      { y: '2020-03-08', a: 1,  b: 0},
+      { y: '2020-03-09', a: 1,  b: 0},
+      { y: '2020-03-10', a: 1,  b: 0},
+      { y: '2020-03-11', a: 2,  b: 0},
+      { y: '2020-03-12', a: 4, b: 0},
+      { y: '2020-03-13', a: 5, b: 0},
+      { y: '2020-03-14', a: 10, b: 0},
+      { y: '2020-03-15', a: 18, b: 0},
+      { y: '2020-03-16', a: 30, b: 1},
+      { y: '2020-03-17', a: 40, b: 1},
+      { y: '2020-03-18', a: 45, b: 1},
+      { y: '2020-03-19', a: 53, b: 1},
+      { y: '2020-03-20', a: 56, b: 1}
+    ],
+    config2 = {
+      data: databogota,
+      xkey: 'y',
+      ykeys: ['a', 'b'],
+      labels: ['Casos confirmados', 'Casos recuperados'],
+      fillOpacity: 0.6,
+      hideHover: 'auto',
+      behaveLikeLine: true,
+      resize: true,
+      pointFillColors:['#ffffff'],
+      pointStrokeColors: ['black'],
+      lineColors:['red','green']
+  };
+
 config.element = 'area-chart';
 Morris.Area(config);
-config.element = 'line-chart';
-Morris.Line(config);
+config2.element = 'line-chart';
+Morris.Line(config2);
 
 /* JS - Circles*/
 
@@ -61,7 +96,7 @@ var valle = L.circle([3.4516364,-76.6720732], {
 	fillOpacity: 0.5,
 	radius: 10000
 }).addTo(map);
-valle.bindPopup("<b>Valle del Cauca.</b><br>Casos confirmados: 17.<br>Casos recuperados:0.<br>Casos activos: 17<br>Fallecidos: 0");
+valle.bindPopup("<b>Valle del Cauca.</b><br>Casos confirmados: 17.<br>Casos recuperados:1.<br>Casos activos: 16<br>Fallecidos: 0");
 
 /* Antioquia*/
 var antioquia = L.circle([6.2441849,-75.7212989], {
