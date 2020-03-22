@@ -30,8 +30,15 @@ body {
   color: #f1f1f1;
 }
 
+/*text-color navbar*/
 
+.confirmados{
+  color: red;
+}
 
+.recuperados{
+  color: green;
+}
 /* Main CSS */
 
 .grid-container {

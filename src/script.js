@@ -17,7 +17,8 @@ var datacolombia = [
       { y: '2020-03-17', a: 75, b: 2},
       { y: '2020-03-18', a: 102, b: 2},
       { y: '2020-03-19', a: 128, b: 2},
-      { y: '2020-03-20', a: 145, b: 2}
+      { y: '2020-03-20', a: 158, b: 2},
+      { y: '2020-03-21', a: 210, b: 3}
     ],
     config = {
       data: datacolombia,
@@ -48,7 +49,8 @@ var databogota = [
       { y: '2020-03-17', a: 40, b: 1},
       { y: '2020-03-18', a: 45, b: 1},
       { y: '2020-03-19', a: 53, b: 1},
-      { y: '2020-03-20', a: 56, b: 1}
+      { y: '2020-03-20', a: 65, b: 1},
+      { y: '2020-03-21', a: 88, b: 1}
     ],
     config2 = {
       data: databogota,
@@ -77,81 +79,81 @@ var bogota = L.circle([4.6495993, -74.1739179], {
 	color: 'red',
 	fillColor: '#f03',
 	fillOpacity: 0.5,
-	radius: 10000
+	radius: 42000
 }).addTo(map);
-bogota.bindPopup("<b>Bogotá D.C.</b><br>Casos confirmados: 56.<br>Casos recuperados:1<br>Casos activos: 55<br>Fallecidos: 0");
+bogota.bindPopup("<b>Bogotá D.C.</b><br>Casos confirmados: 88.<br>Casos recuperados:1<br>Casos activos: 87<br>Fallecidos: 0");
 
 /* Cundinamarca*/
 var Cundinamarca = L.circle([5.0272558,-73.9995766], {
 	color: 'red',
 	fillColor: '#f03',
 	fillOpacity: 0.5,
-	radius: 10000
+	radius: 4000
 }).addTo(map);
-Cundinamarca.bindPopup("<b>Cundinamarca.</b><br>Casos confirmados: 5.<br>Casos recuperados:0.<br>Casos activos: 5<br>Fallecidos: 0");
+Cundinamarca.bindPopup("<b>Cundinamarca.</b><br>Casos confirmados: 8.<br>Casos recuperados:0.<br>Casos activos: 8<br>Fallecidos: 0");
 /* Valle del Cauca*/
 var valle = L.circle([3.4516364,-76.6720732], {
 	color: 'red',
 	fillColor: '#f03',
 	fillOpacity: 0.5,
-	radius: 10000
+	radius: 12000
 }).addTo(map);
-valle.bindPopup("<b>Valle del Cauca.</b><br>Casos confirmados: 17.<br>Casos recuperados:1.<br>Casos activos: 16<br>Fallecidos: 0");
+valle.bindPopup("<b>Valle del Cauca.</b><br>Casos confirmados: 26.<br>Casos recuperados:1.<br>Casos activos: 25<br>Fallecidos: 0");
 
 /* Antioquia*/
 var antioquia = L.circle([6.2441849,-75.7212989], {
 	color: 'red',
 	fillColor: '#f03',
 	fillOpacity: 0.5,
-	radius: 10000
+	radius: 12000
 }).addTo(map);
-antioquia.bindPopup("<b>Antioquia.</b><br>Casos confirmados: 22.<br>Casos recuperados:0.<br>Casos activos: 22<br>Fallecidos: 0");
+antioquia.bindPopup("<b>Antioquia.</b><br>Casos confirmados: 25.<br>Casos recuperados:1.<br>Casos activos: 24<br>Fallecidos: 0");
 /* Bolívar*/
 var Bolívar = L.circle([10.3990533,-75.4735621], {
 	color: 'red',
 	fillColor: '#f03',
 	fillOpacity: 0.5,
-	radius: 10000
+	radius: 7000
 }).addTo(map);
-Bolívar.bindPopup("<b>Bolívar.</b><br>Casos confirmados: 9.<br>Casos recuperados:0.<br>Casos activos: 9<br>Fallecidos: 0");
+Bolívar.bindPopup("<b>Bolívar.</b><br>Casos confirmados: 14.<br>Casos recuperados:0.<br>Casos activos: 13<br>Fallecidos: 1");
 /* Huila*/
 var Huila = L.circle([2.9376172,-75.3424293], {
 	color: 'red',
 	fillColor: '#f03',
 	fillOpacity: 0.5,
-	radius: 10000
+	radius: 5000
 }).addTo(map);
-Huila.bindPopup("<b>Huila.</b><br>Casos confirmados: 9.<br>Casos recuperados:0.<br>Casos activos: 9<br>Fallecidos: 0");
+Huila.bindPopup("<b>Huila.</b><br>Casos confirmados: 10.<br>Casos recuperados:0.<br>Casos activos: 10<br>Fallecidos: 0");
 /* Norte de Santander*/
 var NS = L.circle([7.9087367,-72.6445079], {
 	color: 'red',
 	fillColor: '#f03',
 	fillOpacity: 0.5,
-	radius: 10000
+	radius: 4000
 }).addTo(map);
-NS.bindPopup("<b>Norte de Santander.</b><br>Casos confirmados: 6.<br>Casos recuperados:0.<br>Casos activos: 6<br>Fallecidos: 0");
+NS.bindPopup("<b>Norte de Santander.</b><br>Casos confirmados: 8.<br>Casos recuperados:0.<br>Casos activos: 8<br>Fallecidos: 0");
 /* Risaralda*/
 var Risaralda = L.circle([4.8047603,-75.8538489], {
 	color: 'red',
 	fillColor: '#f03',
 	fillOpacity: 0.5,
-	radius: 10000
+	radius: 4000
 }).addTo(map);
-Risaralda.bindPopup("<b>Risaralda.</b><br>Casos confirmados: 6.<br>Casos recuperados:0.<br>Casos activos: 6<br>Fallecidos: 0");
+Risaralda.bindPopup("<b>Risaralda.</b><br>Casos confirmados: 8.<br>Casos recuperados:0.<br>Casos activos: 8<br>Fallecidos: 0");
 /* Atlántico*/
 var Atlántico = L.circle([10.9837799,-74.9581048], {
 	color: 'red',
 	fillColor: '#f03',
 	fillOpacity: 0.5,
-	radius: 10000
+	radius: 3000
 }).addTo(map);
-Atlántico.bindPopup("<b>Atlántico.</b><br>Casos confirmados: 5.<br>Casos recuperados:0.<br>Casos activos: 5<br>Fallecidos: 0");
+Atlántico.bindPopup("<b>Atlántico.</b><br>Casos confirmados: 7.<br>Casos recuperados:0.<br>Casos activos: 7<br>Fallecidos: 0");
 /* Quindío*/
 var Quindío = L.circle([4.5422681,-75.7505904], {
 	color: 'red',
 	fillColor: '#f03',
 	fillOpacity: 0.5,
-	radius: 10000
+	radius: 1000
 }).addTo(map);
 Quindío.bindPopup("<b>Quindío.</b><br>Casos confirmados: 3.<br>Casos recuperados:0.<br>Casos activos: 3<br>Fallecidos: 0");
 /* Santander*/
@@ -159,7 +161,7 @@ var Santander = L.circle([7.1192007,-73.2030188], {
 	color: 'red',
 	fillColor: '#f03',
 	fillOpacity: 0.5,
-	radius: 10000
+	radius: 1000
 }).addTo(map);
 Santander.bindPopup("<b>Santander.</b><br>Casos confirmados: 2.<br>Casos recuperados:0.<br>Casos activos: 2<br>Fallecidos: 0");
 /* Caldas*/
@@ -167,17 +169,17 @@ var Caldas = L.circle([5.0686824,-75.6237304], {
 	color: 'red',
 	fillColor: '#f03',
 	fillOpacity: 0.5,
-	radius: 10000
+	radius: 2000
 }).addTo(map);
-Caldas.bindPopup("<b>Caldas.</b><br>Casos confirmados: 2.<br>Casos recuperados:0.<br>Casos activos: 2<br>Fallecidos: 0");
+Caldas.bindPopup("<b>Caldas.</b><br>Casos confirmados: 3.<br>Casos recuperados:0.<br>Casos activos: 3<br>Fallecidos: 0");
 /* Tolima*/
 var Tolima = L.circle([4.4122764,-75.326865], {
 	color: 'red',
 	fillColor: '#f03',
 	fillOpacity: 0.5,
-	radius: 10000
+	radius: 2000
 }).addTo(map);
-Tolima.bindPopup("<b>Tolima.</b><br>Casos confirmados: 2.<br>Casos recuperados:0.<br>Casos activos: 2<br>Fallecidos: 0");
+Tolima.bindPopup("<b>Tolima.</b><br>Casos confirmados: 3.<br>Casos recuperados:0.<br>Casos activos: 3<br>Fallecidos: 0");
 /* Meta*/
 var Meta = L.circle([4.1247452,-73.7491475], {
 	color: 'red',
@@ -186,3 +188,21 @@ var Meta = L.circle([4.1247452,-73.7491475], {
 	radius: 10000
 }).addTo(map);
 Meta.bindPopup("<b>Meta.</b><br>Casos confirmados: 1.<br>Casos recuperados:0.<br>Casos activos: 1<br>Fallecidos: 0");
+
+/* magdalena*/
+
+var magdalena = L.circle([11.2316073,-74.2175025], {
+	color: 'red',
+	fillColor: '#f03',
+	fillOpacity: 0.5,
+	radius: 1000
+}).addTo(map);
+magdalena.bindPopup("<b>Magdalena</b><br>Casos confirmados: 2.<br>Casos recuperados:0<br>Casos activos: 2<br>Fallecidos: 0");
+
+var cauca = L.circle([2.4574702,-76.6350395], {
+	color: 'red',
+	fillColor: '#f03',
+	fillOpacity: 0.5,
+	radius: 1000
+}).addTo(map);
+cauca.bindPopup("<b>Cauca</b><br>Casos confirmados: 2.<br>Casos recuperados:0<br>Casos activos: 2<br>Fallecidos: 0");
